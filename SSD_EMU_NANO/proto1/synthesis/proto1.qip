@@ -1,0 +1,199 @@
+set_global_assignment -entity "proto1" -library "lib_proto1" -name IP_TOOL_NAME "qsys"
+set_global_assignment -entity "proto1" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -library "lib_proto1" -name MISC_FILE [file join $::quartus(qip_path) ../../proto1.sopcinfo]
+set_instance_assignment -entity "proto1" -library "lib_proto1" -name SLD_INFO "QSYS_NAME proto1 HAS_SOPCINFO 1 GENERATION_ID 1362099060"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "lib_proto1" -name MISC_FILE [file join $::quartus(qip_path) ../../proto1.qsys]
+
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) proto1.v]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_irq_mapper.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_merlin_width_adapter.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_merlin_burst_uncompressor.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_merlin_arbitrator.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_rsp_xbar_mux_001.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_rsp_xbar_mux.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_rsp_xbar_demux_003.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_rsp_xbar_demux.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_cmd_xbar_mux.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_cmd_xbar_demux_001.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_cmd_xbar_demux.sv]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/altera_reset_controller.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/altera_reset_synchronizer.v]
+set_global_assignment -library "lib_proto1" -name SDC_FILE [file join $::quartus(qip_path) submodules/altera_reset_controller.sdc]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_merlin_burst_adapter.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_id_router_006.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_id_router_003.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_id_router_002.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_id_router.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_addr_router_001.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_addr_router.sv]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/altera_avalon_sc_fifo.v]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_merlin_slave_agent.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_merlin_master_agent.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_merlin_slave_translator.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_merlin_master_translator.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_customins_slave_translator.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0_custom_instruction_master_multi_xconnect.sv]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/altera_customins_master_translator.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_sdram_0.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_up_clocks_0.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_cpu_ex_flag.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/MBC_MEM_CFG.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/MBC_Controller.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_spi_0.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_mbc_data_bus.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_mbc_addr_bus.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_cfi_flash_0.v]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_tristate_controller_aggregator.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_tristate_controller_translator.sv]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_tri_state_bridge_0_pinSharer_0.v]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/altera_merlin_std_arbitrator_core.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_tri_state_bridge_0_pinSharer_0_arbiter.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_tri_state_bridge_0_pinSharer_0_pin_sharer.sv]
+set_global_assignment -library "lib_proto1" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_tri_state_bridge_0_bridge_0.sv]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_jtag_uart_0.v]
+set_global_assignment -library "lib_proto1" -name SOURCE_FILE [file join $::quartus(qip_path) submodules/proto1_jtag_uart_0_input_mutex.dat]
+set_global_assignment -library "lib_proto1" -name SOURCE_FILE [file join $::quartus(qip_path) submodules/proto1_jtag_uart_0_input_stream.dat]
+set_global_assignment -library "lib_proto1" -name SOURCE_FILE [file join $::quartus(qip_path) submodules/proto1_jtag_uart_0_output_stream.dat]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_timer_0.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_sysid_qsys_0.v]
+set_global_assignment -library "lib_proto1" -name SOURCE_FILE [file join $::quartus(qip_path) submodules/proto1_onchip_memory2_0.hex]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_onchip_memory2_0.v]
+set_global_assignment -library "lib_proto1" -name SDC_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0.sdc]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0_jtag_debug_module_sysclk.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0_jtag_debug_module_tck.v]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0_jtag_debug_module_wrapper.v]
+set_global_assignment -library "lib_proto1" -name SOURCE_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0_ociram_default_contents.mif]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0_oci_test_bench.v]
+set_global_assignment -library "lib_proto1" -name SOURCE_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0_rf_ram_a.mif]
+set_global_assignment -library "lib_proto1" -name SOURCE_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0_rf_ram_b.mif]
+set_global_assignment -library "lib_proto1" -name VERILOG_FILE [file join $::quartus(qip_path) submodules/proto1_nios2_qsys_0_test_bench.v]
+
+set_global_assignment -entity "proto1_irq_mapper" -library "lib_proto1" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "proto1_irq_mapper" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_irq_mapper" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_width_adapter"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_rsp_xbar_mux_001" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "proto1_rsp_xbar_mux_001" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_rsp_xbar_mux_001" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_rsp_xbar_mux" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "proto1_rsp_xbar_mux" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_rsp_xbar_mux" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_rsp_xbar_demux_003" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "proto1_rsp_xbar_demux_003" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_rsp_xbar_demux_003" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_rsp_xbar_demux" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "proto1_rsp_xbar_demux" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_rsp_xbar_demux" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_cmd_xbar_mux" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "proto1_cmd_xbar_mux" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_cmd_xbar_mux" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_cmd_xbar_demux_001" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "proto1_cmd_xbar_demux_001" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_cmd_xbar_demux_001" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_cmd_xbar_demux" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "proto1_cmd_xbar_demux" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_cmd_xbar_demux" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_reset_controller" -library "lib_proto1" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_reset_controller" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_burst_adapter"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_id_router_006" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "proto1_id_router_006" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_id_router_006" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_id_router_003" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "proto1_id_router_003" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_id_router_003" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_id_router_002" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "proto1_id_router_002" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_id_router_002" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_id_router" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "proto1_id_router" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_id_router" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_addr_router_001" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "proto1_addr_router_001" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_addr_router_001" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_addr_router" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "proto1_addr_router" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_addr_router" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_merlin_master_agent" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_merlin_master_translator" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_customins_slave_translator" -library "lib_proto1" -name IP_TOOL_NAME "altera_customins_slave_translator"
+set_global_assignment -entity "altera_customins_slave_translator" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_customins_slave_translator" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_nios2_qsys_0_custom_instruction_master_multi_xconnect" -library "lib_proto1" -name IP_TOOL_NAME "altera_customins_xconnect"
+set_global_assignment -entity "proto1_nios2_qsys_0_custom_instruction_master_multi_xconnect" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_nios2_qsys_0_custom_instruction_master_multi_xconnect" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_customins_master_translator" -library "lib_proto1" -name IP_TOOL_NAME "altera_customins_master_translator"
+set_global_assignment -entity "altera_customins_master_translator" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_customins_master_translator" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_sdram_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_new_sdram_controller"
+set_global_assignment -entity "proto1_sdram_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_sdram_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_cpu_ex_flag" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "proto1_cpu_ex_flag" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_cpu_ex_flag" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_spi_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_spi"
+set_global_assignment -entity "proto1_spi_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_spi_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_mbc_data_bus" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "proto1_mbc_data_bus" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_mbc_data_bus" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_mbc_addr_bus" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "proto1_mbc_addr_bus" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_mbc_addr_bus" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_cfi_flash_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_generic_tristate_controller"
+set_global_assignment -entity "proto1_cfi_flash_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_cfi_flash_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_tristate_controller_aggregator" -library "lib_proto1" -name IP_TOOL_NAME "altera_tristate_controller_aggregator"
+set_global_assignment -entity "altera_tristate_controller_aggregator" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_tristate_controller_aggregator" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_tristate_controller_translator" -library "lib_proto1" -name IP_TOOL_NAME "altera_tristate_controller_translator"
+set_global_assignment -entity "altera_tristate_controller_translator" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "altera_tristate_controller_translator" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_tri_state_bridge_0_pinSharer_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_tristate_conduit_pin_sharer"
+set_global_assignment -entity "proto1_tri_state_bridge_0_pinSharer_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_tri_state_bridge_0_pinSharer_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_tri_state_bridge_0_pinSharer_0_arbiter" -library "lib_proto1" -name IP_TOOL_NAME "altera_merlin_std_arbitrator"
+set_global_assignment -entity "proto1_tri_state_bridge_0_pinSharer_0_arbiter" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_tri_state_bridge_0_pinSharer_0_arbiter" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_tri_state_bridge_0_pinSharer_0_pin_sharer" -library "lib_proto1" -name IP_TOOL_NAME "altera_tristate_conduit_pin_sharer_core"
+set_global_assignment -entity "proto1_tri_state_bridge_0_pinSharer_0_pin_sharer" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_tri_state_bridge_0_pinSharer_0_pin_sharer" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_tri_state_bridge_0_bridge_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_tristate_conduit_bridge"
+set_global_assignment -entity "proto1_tri_state_bridge_0_bridge_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_tri_state_bridge_0_bridge_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_jtag_uart_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "proto1_jtag_uart_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_jtag_uart_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_timer_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "proto1_timer_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_timer_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_sysid_qsys_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_sysid_qsys"
+set_global_assignment -entity "proto1_sysid_qsys_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_sysid_qsys_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_onchip_memory2_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "proto1_onchip_memory2_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_onchip_memory2_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "proto1_nios2_qsys_0" -library "lib_proto1" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "proto1_nios2_qsys_0" -library "lib_proto1" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "proto1_nios2_qsys_0" -library "lib_proto1" -name IP_TOOL_ENV "qsys"

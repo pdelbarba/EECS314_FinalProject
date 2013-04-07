@@ -1,0 +1,661 @@
+<html>
+<body>
+<h1 align="center">DE4 FPGA Board Configuration</h1>
+<br />
+<br />
+<h2 align="left">Pin Assignments:</h2>
+<ul>
+<a href="#CLOCK"><li>CLOCK</li></a>
+<br />
+<a href="#Flash and SRAM Address/Data Share Bus"><li>Flash and SRAM Address/Data Share Bus</li></a>
+<br />
+<a href="#Flash Control"><li>Flash Control</li></a>
+<br />
+<a href="#GPIO_0"><li>GPIO_0</li></a>
+<br />
+</ul>
+<br />
+<br />
+<br />
+<h2 align="left">Pin Assignment Table:</h2>
+<h2><a name="CLOCK"></a></h2><table border="3">
+<caption  align="left">CLOCK</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+</tr>
+<tr>
+   <td align="left">OSC_50_BANK2</td>
+   <td align="left">AC35</td>
+   <td align="left">input</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">OSC_50_BANK3</td>
+   <td align="left">AV22</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">OSC_50_BANK4</td>
+   <td align="left">AV19</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">OSC_50_BANK5</td>
+   <td align="left">AC6</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V PCI-X</td>
+</tr>
+<tr>
+   <td align="left">OSC_50_BANK6</td>
+   <td align="left">AB6</td>
+   <td align="left">input</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">OSC_50_BANK7</td>
+   <td align="left">A19</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">GCLKOUT_FPGA</td>
+   <td align="left">AH19</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">GCLKIN</td>
+   <td align="left">A21</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">PLL_CLKIN_p</td>
+   <td align="left">B22</td>
+   <td align="left">input</td>
+   <td align="left">LVDS</td>
+</tr>
+</table>
+<h2><a name="Flash and SRAM Address/Data Share Bus"></a></h2><table border="3">
+<caption  align="left">Flash and SRAM Address/Data Share Bus</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+</tr>
+<tr>
+   <td align="left">FSM_D[0]</td>
+   <td align="left">K29</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[1]</td>
+   <td align="left">J30</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[2]</td>
+   <td align="left">K30</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[3]</td>
+   <td align="left">L29</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[4]</td>
+   <td align="left">K31</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[5]</td>
+   <td align="left">E32</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[6]</td>
+   <td align="left">F32</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[7]</td>
+   <td align="left">H32</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[8]</td>
+   <td align="left">B32</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[9]</td>
+   <td align="left">C32</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[10]</td>
+   <td align="left">C35</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[11]</td>
+   <td align="left">D35</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[12]</td>
+   <td align="left">M22</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[13]</td>
+   <td align="left">M28</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[14]</td>
+   <td align="left">C31</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_D[15]</td>
+   <td align="left">D31</td>
+   <td align="left">inout</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[1]</td>
+   <td align="left">G22</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[2]</td>
+   <td align="left">G23</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[3]</td>
+   <td align="left">A25</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[4]</td>
+   <td align="left">H22</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[5]</td>
+   <td align="left">H23</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[6]</td>
+   <td align="left">J22</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[7]</td>
+   <td align="left">K22</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[8]</td>
+   <td align="left">M21</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[9]</td>
+   <td align="left">J23</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[10]</td>
+   <td align="left">F34</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[11]</td>
+   <td align="left">G35</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[12]</td>
+   <td align="left">E34</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[13]</td>
+   <td align="left">J32</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[14]</td>
+   <td align="left">F35</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[15]</td>
+   <td align="left">C24</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[16]</td>
+   <td align="left">A24</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[17]</td>
+   <td align="left">D23</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[18]</td>
+   <td align="left">D24</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[19]</td>
+   <td align="left">T27</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[20]</td>
+   <td align="left">T28</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[21]</td>
+   <td align="left">D22</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[22]</td>
+   <td align="left">E23</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[23]</td>
+   <td align="left">N20</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[24]</td>
+   <td align="left">P20</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FSM_A[25]</td>
+   <td align="left">C22</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+</table>
+<h2><a name="Flash Control"></a></h2><table border="3">
+<caption  align="left">Flash Control</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+</tr>
+<tr>
+   <td align="left">FLASH_RYBY_n</td>
+   <td align="left">G21</td>
+   <td align="left">input</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_CLK</td>
+   <td align="left">E22</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_RESET_n</td>
+   <td align="left">D21</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_OE_n</td>
+   <td align="left">N21</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_WE_n</td>
+   <td align="left">R20</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_ADV_n</td>
+   <td align="left">F21</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_CE_n</td>
+   <td align="left">F23</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+</table>
+<h2><a name="GPIO_0"></a></h2><table border="3">
+<caption  align="left">GPIO_0 connect to GPIO Default</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+   <th align="left" bgcolor="Khaki">GPIO Pin Index</th>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[0]</td>
+   <td align="left">AF6</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">1</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[1]</td>
+   <td align="left">AU9</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">2</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[2]</td>
+   <td align="left">AE5</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">3</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[3]</td>
+   <td align="left">AR8</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">4</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[4]</td>
+   <td align="left">AN9</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">5</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[5]</td>
+   <td align="left">AP9</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">6</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[6]</td>
+   <td align="left">AV5</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">7</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[7]</td>
+   <td align="left">AW6</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">8</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[8]</td>
+   <td align="left">AV7</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">9</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[9]</td>
+   <td align="left">AW7</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">10</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[10]</td>
+   <td align="left">AT5</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">13</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[11]</td>
+   <td align="left">AT8</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">14</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[12]</td>
+   <td align="left">AP5</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">15</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[13]</td>
+   <td align="left">AP7</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">16</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[14]</td>
+   <td align="left">AN5</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">17</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[15]</td>
+   <td align="left">AN10</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">18</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[16]</td>
+   <td align="left">AM5</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">19</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[17]</td>
+   <td align="left">AM10</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">20</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[18]</td>
+   <td align="left">AL10</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">21</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[19]</td>
+   <td align="left">AM8</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">22</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[20]</td>
+   <td align="left">AL8</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">23</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[21]</td>
+   <td align="left">AK8</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">24</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[22]</td>
+   <td align="left">AJ11</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">25</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[23]</td>
+   <td align="left">AK7</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">26</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[24]</td>
+   <td align="left">AJ5</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">27</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[25]</td>
+   <td align="left">AH12</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">28</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[26]</td>
+   <td align="left">AG10</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">31</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[27]</td>
+   <td align="left">AG13</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">32</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[28]</td>
+   <td align="left">AG9</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">33</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[29]</td>
+   <td align="left">AF11</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">34</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[30]</td>
+   <td align="left">AT9</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">35</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[31]</td>
+   <td align="left">AF10</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">36</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[32]</td>
+   <td align="left">AD10</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">37</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[33]</td>
+   <td align="left">AD9</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">38</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[34]</td>
+   <td align="left">AD12</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">39</td>
+</tr>
+<tr>
+   <td align="left">SPI_GPIO[35]</td>
+   <td align="left">AD13</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V PCI-X</td>
+   <td align="left">40</td>
+</tr>
+</table>
+</html>
+</body>

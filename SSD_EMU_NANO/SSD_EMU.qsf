@@ -1,0 +1,81 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY SSD_EMU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name LAST_QUARTUS_VERSION 12.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:12:56 OCTOBER 18,2012"
+
+#============================================================
+# RAM Content View
+#============================================================
+#set_parameter -name ENABLE_RUNTIME_MOD YES -to "MBC_Module:mbc0|MLB_Module:mlb_0|LUT_Module:l1|altsyncram:LUTTable_rtl_0|altsyncram_qfk1:auto_generated"
+#set_parameter -name INSTANCE_NAME LUT1 -to "MBC_Module:mbc0|MLB_Module:mlb_0|LUT_Module:l1|altsyncram:LUTTable_rtl_0|altsyncram_qfk1:auto_generated"
+#set_parameter -name ENABLE_RUNTIME_MOD YES -to "MBC_Module:mbc0|MLB_Module:mlb_0|ScheduleTable_Module:s1|altsyncram:schedTable_rtl_0|altsyncram_6gi1:auto_generated"
+#set_parameter -name INSTANCE_NAME SCH1 -to "MBC_Module:mbc0|MLB_Module:mlb_0|ScheduleTable_Module:s1|altsyncram:schedTable_rtl_0|altsyncram_6gi1:auto_generated"
+
+set_parameter -name LPM_HINT "ENABLE_RUNTIME_MOD YES, INSTANCE_NAME LUT1" -to "MBC_Module:mbc0|MLB_Module:mlb_0|LUT_Module:l1|altsyncram:LUTTable_rtl_0|altsyncram_qfk1:auto_generated"
+set_parameter -name LPM_HINT "ENABLE_RUNTIME_MOD YES, INSTANCE_NAME SCH1" -to "MBC_Module:mbc0|MLB_Module:mlb_0|ScheduleTable_Module:s1|altsyncram:schedTable_rtl_0|altsyncram_6gi1:auto_generated"
+#============================================================
+# CLOCK
+#============================================================
+
+#============================================================
+# Flash and SRAM Address/Data Share Bus
+#============================================================
+
+#============================================================
+# Flash Control
+#============================================================
+
+#============================================================
+# GPIO_0, GPIO_0 connect to GPIO Default
+#============================================================
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name VERILOG_FILE SCH1.v
+set_global_assignment -name VERILOG_FILE MBC_MEM_CFG.v
+set_global_assignment -name QIP_FILE proto1/synthesis/proto1.qip
+set_global_assignment -name VERILOG_FILE MBC_Controller.v
+set_global_assignment -name VERILOG_FILE spi_serdes.v
+set_global_assignment -name VERILOG_FILE MBC/ScheduleTable_Module.v
+set_global_assignment -name VERILOG_FILE MBC/RegisterFile_Module.v
+set_global_assignment -name VERILOG_FILE MBC/MLBoutputMux_Module.v
+set_global_assignment -name VERILOG_FILE MBC/MLB_Module.v
+set_global_assignment -name VERILOG_FILE MBC/MBC_Testbench.v
+set_global_assignment -name VERILOG_FILE MBC/MBC_Module.v
+set_global_assignment -name VERILOG_FILE MBC/LUT_Module.v
+set_global_assignment -name VERILOG_FILE MBC/IntraMLBMux_Module.v
+set_global_assignment -name VERILOG_FILE MBC/InterMLBMux_Module.v
+set_global_assignment -name VERILOG_FILE MBC/Datapath_Module.v
+set_global_assignment -name VERILOG_FILE MBC/Counter_Module.v
+set_global_assignment -name VERILOG_FILE SSD_EMU.v
+set_global_assignment -name VERILOG_FILE EXT_PLL_CTRL.v
+set_global_assignment -name SDC_FILE SSD_EMU.SDC
+set_global_assignment -name SIGNALTAP_FILE ../SSD_HOST/stp1.stp
+set_global_assignment -name QIP_FILE mbc_mem.qip
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SIGNALTAP_FILE stp2.stp
+set_global_assignment -name QIP_FILE SCH1.qip
+set_global_assignment -name QIP_FILE LUT1.qip
+set_global_assignment -name SIGNALTAP_FILE stp3.stp
+set_global_assignment -name MISC_FILE "C:/Users/Robert/Documents/MBC/OFFCHIP/SSD_EMU/SSD_EMU.dpf"
+set_global_assignment -name VERILOG_FILE SSD_EMU_NO_MAHA.v
+set_global_assignment -name SIGNALTAP_FILE stp4.stp
+set_global_assignment -name SIGNALTAP_FILE demo0.stp
+set_global_assignment -name RAPID_RECOMPILE_MODE OFF
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_SYNTH -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
