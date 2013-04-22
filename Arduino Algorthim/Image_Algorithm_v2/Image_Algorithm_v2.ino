@@ -1,14 +1,14 @@
 #include <math.h>
+#include <stdint.h>
 
-const int x = 16;
-const int n = 20;
+const int x = 32;
 
-byte a[x][x];
-byte b[x][x];
-byte c[x][x];
-byte d[x][x];
+byte a[x];
+byte b[x];
+byte c[x];
+byte d[x];
 
-double compare(byte one[][x], byte two[][x]);
+byte compare(byte one[x], byte two[x]);
 
 void setup() {
   
@@ -18,14 +18,13 @@ void setup() {
   Serial.println("Serial connection initialized!");  
   
   for (int i = 0; i < x; i++){
-     for (int j = 0; j < x; j++){
-      a[i][j] = B00000000;
-      b[i][j] = B11111111;
-      c[i][j] = B01111111;
-      d[i][j] = B00000001;
-        
-     }
+      a[i] = B00000000;
+      b[i] = B11111111;
+      c[i] = B01111111;
+      d[i] = B00000001;
     }
+   
+   Serial.println(abs(a[x]/2-b[x]/2));
    
    Serial.print("Similarity value of all white and all black: ");
    Serial.println(compare(a,b));
@@ -43,48 +42,66 @@ void loop() {
   
 }
 
-double compare(byte one[][x], byte two[][x]){
- 
-  double d1, d2, d3, d4, sum, average, result, total;
-  
-  total = 0;
-  
-  int width = x;
+byte compare(byte one[x], byte two[x]){
     
-  for (int i = 0; i < x; i++){
-    for (int j = 0; j < x; j++){
-      
-      d1 = 0;
-      d2 = 0;
-      d3 = 0;
-      d4 = 0;
-      sum = 0;
-      average = 0;
-      result = 0;
+  Serial.println("Beginning comparison");
+  
+  signed char result[x];
+  byte place = x;
+  
+  
+  for (int i = 0; i < x; i++){    
+   result[i] = (one[i]/2)-(two[i]/2);
+   result[i] = abs(result[i]);
+   Serial.print(i);
+   Serial.print("   ");
+   Serial.println(result[i]);
+   }
    
-      d1 = double(one[i][j]) - double(two[i][j]);
-      //Serial.println(d1); 
-      d2 = double(one[i+1][j]) - double(two[i+1][j]);
-      d3 = double(one[i+1][j+1]) - double(two[i+1][j+1]);
-      d1 = double(one[i][j+1]) - double(two[i][j+1]);
-
-      d1 *= d1;
-      //Serial.println(d1);
-      d2 *= d2;
-      d3 *= d3;
-      d4 *= d4;
-      
-      sum = d1 + d2 + d3 + d4;
-      //Serial.println(sum);
-      
-      average = sum/4;
-      //Serial.println(average);
-      
-      result = sqrt(average);
-      //Serial.println(result);
-      
-      total += result;
-    }
-  }  
-  return total;
+   Serial.println();
+  
+  while (place != 0){
+    
+    byte wrt = B0;
+    byte rd = B0;
+    
+    /*
+    Serial.println(place); 
+    
+    Serial.print(wrt);
+    Serial.print("   ");
+    Serial.println(rd);
+    */
+    
+    Serial.println("Break here");
+    
+   while (rd < place - 2){
+     
+     Serial.print(result[rd]);
+     Serial.print(" + ");
+     Serial.print(result[rd+1]);
+     Serial.print(" = ");
+     Serial.print((result[rd]+result[rd+1])/2);
+     
+     result[wrt] = (result[rd] + result[rd+1])/2;
+     
+     Serial.print("   ");
+     Serial.println(result[wrt]);
+     
+     wrt++;
+     rd += 2;
+    
+    /* 
+     Serial.print(wrt);
+     Serial.print("   ");
+     Serial.println(rd);
+   */
+   }
+   
+   place = place/2;
+   
+  }
+ 
+ return result[0];
+  
 }
